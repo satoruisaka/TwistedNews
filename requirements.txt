@@ -1,0 +1,8 @@
+# TwistedNews Requirements
+
+# Core dependencies
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Optional: For development/testing
+pytest>=7.4.0
