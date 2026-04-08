@@ -12,7 +12,7 @@ load_dotenv()
 
 # Project paths
 PROJECT_ROOT = Path(__file__).parent
-MRA_DATA_DIR = Path("../MRA/data")
+MRA_DATA_DIR = Path("../TwistedCollab/data")
 NEWS_ARTICLES_DIR = MRA_DATA_DIR / "markdown" / "news_articles"
 OUTPUT_DIR = MRA_DATA_DIR / "markdown" / "twistednews"
 
@@ -42,7 +42,7 @@ DISTORTION_MODES = ["invert_er", "so_what_er", "echo_er", "what_if_er", "cucumb_
 DISTORTION_TONES = ["neutral", "technical", "primal", "poetic", "satirical"]
 
 # Ollama Settings
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen3:latest")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen3:30b")
 OLLAMA_NUM_CTX = int(os.getenv("OLLAMA_NUM_CTX", "128000"))  # Large context window for processing multiple articles
 
 # Email Settings (same as NewsAgent)
